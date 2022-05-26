@@ -33,9 +33,21 @@
       "minUI5Version": "1.60.0",
       "libs": {
         "sap.m": {},
-        "sap.ui.core": {}
+        "sap.ui.core": {},
+        "sap.ui.unified": {}
       }
     },
+    "config": {
+			"sample": {
+				"files": [
+					"Page.view.xml",
+					"Page.controller.js",
+					"Create.fragment.xml",
+					"Details.fragment.xml",
+					"manifest.json"
+				]
+			}
+		},
     "contentDensities": {
       "compact": true,
       "cozy": true
@@ -79,16 +91,16 @@
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "MainView",
-          "viewName": "MainView"
+          "viewId": "Page",
+          "viewName": "Page"
         }
       }
     },
     "rootView": {
-      "viewName": "com.myorg.calendarappointment.view.MainView",
+      "viewName": "com.myorg.calendarappointment.view.Page",
       "type": "XML",
       "async": true,
-      "id": "MainView"
+      "id": "Page"
     }
   }
 }
